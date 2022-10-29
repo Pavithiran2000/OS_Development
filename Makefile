@@ -11,17 +11,17 @@ all: kernel.elf
 kernel.elf: $(OBJECTS)
 		ld $(LDFLAGS) $(OBJECTS) -o kernel.elf
 
-os.iso: kernel.elf
+black_os.iso: kernel.elf
 		cp kernel.elf iso/boot/kernel.elf
 		genisoimage -R                              \
 								-b boot/grub/stage2_eltorito    \
 								-no-emul-boot                   \
 								-boot-load-size 4               \
-								-A black_os                           \
+								-A black_os                     \
 								-input-charset utf8             \
 								-quiet                          \
 								-boot-info-table                \
-								-o black_os.iso                   \
+								-o black_os.iso                 \
 								iso
 
 run: black_os.iso
