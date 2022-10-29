@@ -8,6 +8,6 @@
 
            char ptr2[] = "Welcome to Black OS";
    
-    
-    fb_write( ptr2, 21);
+    serial_write(0x3F8, ptr2, 19);
+    fb_write( ptr2, 19);
     }

@@ -32,38 +32,38 @@
 00000000000i[     ]   SB16 support: yes
 00000000000i[     ]   USB support: yes
 00000000000i[     ]   VGA extension support: vbe cirrus
-00000000000i[MEM0 ] allocated memory at 0x7f4a373ae010. after alignment, vector=0x7f4a373af000
+00000000000i[MEM0 ] allocated memory at 0x7f0174875010. after alignment, vector=0x7f0174876000
 00000000000i[MEM0 ] 32.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
 00000000000i[VTIME] using 'realtime pit' synchronization method
-00000000000i[     ] lt_dlhandle is 0x561eec211960
+00000000000i[     ] lt_dlhandle is 0x563247ed7960
 00000000000i[PLGIN] loaded plugin libbx_hdimage.so
-00000000000i[     ] lt_dlhandle is 0x561eec212240
+00000000000i[     ] lt_dlhandle is 0x563247ed8240
 00000000000i[PLGIN] loaded plugin libbx_pci.so
-00000000000i[     ] lt_dlhandle is 0x561eec212dd0
+00000000000i[     ] lt_dlhandle is 0x563247ed8dd0
 00000000000i[PLGIN] loaded plugin libbx_pci2isa.so
-00000000000i[     ] lt_dlhandle is 0x561eec2137e0
+00000000000i[     ] lt_dlhandle is 0x563247ed97e0
 00000000000i[PLGIN] loaded plugin libbx_acpi.so
-00000000000i[     ] lt_dlhandle is 0x561eec2141f0
+00000000000i[     ] lt_dlhandle is 0x563247eda1f0
 00000000000i[PLGIN] loaded plugin libbx_cmos.so
-00000000000i[     ] lt_dlhandle is 0x561eec214b30
+00000000000i[     ] lt_dlhandle is 0x563247edab30
 00000000000i[PLGIN] loaded plugin libbx_dma.so
-00000000000i[     ] lt_dlhandle is 0x561eec2155d0
+00000000000i[     ] lt_dlhandle is 0x563247edb5d0
 00000000000i[PLGIN] loaded plugin libbx_pic.so
-00000000000i[     ] lt_dlhandle is 0x561eec215e80
+00000000000i[     ] lt_dlhandle is 0x563247edbe80
 00000000000i[PLGIN] loaded plugin libbx_pit.so
-00000000000i[     ] lt_dlhandle is 0x561eec2168c0
+00000000000i[     ] lt_dlhandle is 0x563247edc8c0
 00000000000i[PLGIN] loaded plugin libbx_floppy.so
-00000000000i[     ] lt_dlhandle is 0x561eec2174c0
+00000000000i[     ] lt_dlhandle is 0x563247edd4c0
 00000000000i[PLGIN] loaded plugin libbx_vga.so
-00000000000i[     ] lt_dlhandle is 0x561eec217d30
+00000000000i[     ] lt_dlhandle is 0x563247eddd30
 00000000000i[PLGIN] loaded plugin libbx_ioapic.so
-00000000000i[     ] lt_dlhandle is 0x561eec218580
+00000000000i[     ] lt_dlhandle is 0x563247ede580
 00000000000i[PLGIN] loaded plugin libbx_keyboard.so
-00000000000i[     ] lt_dlhandle is 0x561eec219010
+00000000000i[     ] lt_dlhandle is 0x563247edf010
 00000000000i[PLGIN] loaded plugin libbx_harddrv.so
-00000000000i[     ] lt_dlhandle is 0x561eec22b140
+00000000000i[     ] lt_dlhandle is 0x563247ef1140
 00000000000i[PLGIN] loaded plugin libbx_pci_ide.so
 00000000000i[PLGIN] init_dev of 'pci' plugin device by virtual method
 00000000000i[PCI  ] 440FX Host bridge present at device 0, function 0
@@ -71,7 +71,7 @@
 00000000000i[PCI  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Sun Oct 30 03:47:32 2022 (time0=1667081852)
+00000000000i[CMOS ] Setting initial clock to: Sun Oct 30 04:01:43 2022 (time0=1667082703)
 00000000000i[PLGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[PLGIN] init_dev of 'pic' plugin device by virtual method
@@ -213,9 +213,10 @@
 00001500005i[BXVGA] VBE known Display Interface b0c0
 00001500037i[BXVGA] VBE known Display Interface b0c5
 00001502962i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
-00005715593i[BIOS ] IDE time out
-00143274250i[BIOS ] Booting from 07c0:0000
-00143534052i[BIOS ] int13_harddisk: function 41, unmapped device for ELDL=80
-00143537732i[BIOS ] int13_harddisk: function 08, unmapped device for ELDL=80
-00143541396i[BIOS ] *** int 15h function AX=00c0, BX=0000 not yet supported!
-00145159950i[MEM0 ] allocate_block: block=0x1 used 0x3 of 0x20
+00005715685i[BIOS ] IDE time out
+00109805655i[BIOS ] Booting from 07c0:0000
+00110065457i[BIOS ] int13_harddisk: function 41, unmapped device for ELDL=80
+00110069137i[BIOS ] int13_harddisk: function 08, unmapped device for ELDL=80
+00110072801i[BIOS ] *** int 15h function AX=00c0, BX=0000 not yet supported!
+00111696024i[MEM0 ] allocate_block: block=0x1 used 0x3 of 0x20
+00111821443i[SER  ] com1: FIFO enabled
